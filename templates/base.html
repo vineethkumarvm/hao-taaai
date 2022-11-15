@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAO TAI</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+    <header class="main container">
+            <div class="submain" >
+                <img src="../static/images/logo 1.png">
+                <h2 >Hao Tai</h2>
+            </div>
+
+            <div class="navlink" >
+                <ul>
+                    <li><a href="{% url 'home'%}">HOME</a></li>
+                    <li><a href="{% url 'about'%}">ABOUT</a></li>
+                    <li><a href="{% url 'job'%}">JOBS</a></li>
+                    <li><a href="">BENEFITS</a></li>
+                    {% if request.user.is_authenticated %}
+                    <li><a href="">{{request.user.username}}</a></li>
+                    <li><a href="{%url 'signout'%}">logout</a></li>
+                    {%else%}
+                    <li><a href="{% url 'signin'%}">LOGIN</a></li>
+                    <li><a href="{% url 'signup'%}">SIGN UP</a></li>
+                    {%endif%}
+                </ul>
+            </div>   
+            <span  class="hamburger"  id="mynav"><i>&#9776;</i>
+            </span> 
+                
+    </header>
+
+    {% block content %}
+    {%endblock%}
+
+
+
+
+
+    <section class="footer" >
+        <h3>Hao Tai</h3>
+        <div id="bottomdiv">
+            <div class="footerleft">
+                <p>Links</p>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="">JOBS</a></li>
+                    <li><a href="">BENEFITS</a></li>
+                </ul>
+    
+            </div>
+            <div class="footerright">
+                <p>Follow Us On</p>
+                <div>
+                    <img src="../static/images/instagram.png" alt="">
+                    <img src="../static/images/Vector(1).png" alt="">
+                    <img src="../static/images/Vector(2).png" alt="">
+                    <img src="../static/images/mail.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>   
+    </section>
+    <script src="./menu.js"></script>
+    
+</body>
+</html>

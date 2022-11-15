@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+form{
+    text-align: center;
+    margin: 40px auto;
+}
+#user{
+    text-align: center;
+}
+
+input{ margin: auto;}
+
+#button{
+    padding: 20px;
+}
+#butt{
+    text-align: center;
+}

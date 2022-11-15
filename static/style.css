@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+}
+
+/* HOME PAGE CSS */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+
+}
+.submain{
+    display: flex;
+    align-items: center;
+}
+span{
+    display: none;
+}
+
+.spotlight{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.logo{
+    font-size: 25px;
+    font-family: roboto flex;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.main ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+
+}
+
+.main li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+.readmorecover{
+    background:blue ;
+    border-radius: 10px;
+    width: 105px;
+    margin: 10px;
+    padding: 10px;
+}
+.h5font{
+    padding: 10px;
+    margin: 10px;
+}
+.h2font{
+    padding: 10px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+
+}
+.box{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+  
+}
+
+.boxin{
+    background-color: #DBD1EF;
+    border-radius: 20px;
+    margin: 5px;
+    grid-column:span 1;
+    padding: 20px;
+}
+.square{
+    background-color: rgb(139, 139, 229);
+    border-radius: 8px;
+    width: 80%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+.jobcategory{
+    text-align: center;
+    color: rgb(0, 85, 255);
+    margin: 10px;
+    padding: 50px;
+}
+.joindiv{
+    display: flex;
+}
+.fullbox{
+    display: grid;
+}
+.subbox{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 10px;
+    padding: 20px;
+    gap: 20px;
+
+}
+.singlebox{
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(252, 15, 54);
+    border-radius: 20px;
+    grid-column: span 2;
+}
+.inner{
+    background-color: rgb(255, 163, 241);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#more{
+    align-items:center;
+    padding-top: 80px;
+    color: rgb(235, 98, 98);
+    justify-content: center;
+}
+.boxthree{
+    display:grid ;
+    background-color: rgb(252, 205, 205);
+    padding: 10px;
+    
+
+}
+.benefits{
+    margin: 10px;
+    padding: 10px;
+   
+}
+.beforearrival{  
+    margin: 10px;
+    padding: 10px;
+}
+.boxthreefull{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.footer{
+    color: white;
+    padding: 10px;
+    background-color: rgb(255, 91, 91)
+
+}
+.linklast{
+    margin: 10px;
+    padding: 10px;
+}
+.menutwo{
+    width: 100%;
+    height: 70px;
+
+}
+.menutwo ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.menutwo li{
+    list-style: none;
+    font-size: 14px;
+    margin: 10px;
+}
+.follow{
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.footer ul li a{
+    text-decoration: none;
+    margin: 10px;
+}
+.footer ul{
+    list-style: none;
+}
+#bottomdiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footerleft ul{
+    display: flex;
+}
+#bottomdiv .footerright{
+    justify-self: end;
+    align-self: center;
+}
+
+.overlay{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: rgba(233, 229, 229, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+/* ABOUT PAGE CSS */
+
+.aboutbox{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ padding-top: 40px;
+}
+
+.squaretwo{
+    background-color: rgb(139, 139, 229);
+    border-radius: 20px;
+    width: 70%;
+    height: 300px;
+    margin: 10px;
+
+}
+containertwo{
+    display: flex;
+}
+.boxabout{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    width: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.boxinabout{
+    background-color: #DBD1EF;
+    border-radius: 10px;
+    margin:10px;
+    grid-column:span 1;
+    padding: 50px;
+}
+/*JOB PAGE CSS*/
+
+/*crptojob PAGE CSS*/
+
+.subboxthree{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px;
+}
+.singleboxthree{
+    grid-column: span 4 ;
+}
+.cp{
+    display: none;
+}
+.innerthree{
+    background-color: rgb(247, 179, 230);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 105px;
+
+}
+.boxthreecrp{
+    display:grid ;
+    padding: 10px;
+    
+
+}
+.requirementscrp{
+    margin: 10px;
+    padding: 10px;
+   
+}
+.beforearrivalcrp{  
+    margin: 10px;
+    padding: 10px;
+}
+.boxthreefullcrp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.sendcvcovercrp{
+    background:rgb(222, 96, 96) ;
+    border-radius: 10px;
+    width: 105px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+@media(max-width:1000px){
+    .spotlight div{
+        grid-column: span 2;
+    }
+    .square{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .navlink{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .singlebox{
+        grid-column: span 3;
+    }
+    .boxthreefull .beforearrival{
+        grid-column: span 3;
+    }
+
+    
+}
+@media screen and (max-width:600px){
+    .singlebox{
+        grid-column: span 6;
+        
+    }
+   .footer{
+    display: none;
+   }
+   .h2font{
+    grid-column: span 2;
+   }
+   .boxinabout{
+    grid-column: span 4;
+
+  }
+  .beforearrivalcrp{
+    grid-column: span 6;
+  }
+  .singleboxthree{
+    grid-column: span 3;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+    .cp{
+        display: flex;
+        text-align: center;
+        padding-left: 30px;
+
+    }
+    .cp2{
+        display: none;
+    }
+    #more{
+        background:rgb(255, 180, 239) ;
+        border-radius: 10px;
+        width: 105px;
+        margin: 10px;
+        padding: 10px;
+        margin-left: 180px;
+    }
+    .left{
+        text-align: center;
+        margin: 30px;
+    }
+    .left a{
+        text-decoration: none;
+        color: black;
+        margin: 15px;
+    }
+    .right{
+        text-align: center;
+    }
+    
+
+
+
+}
+

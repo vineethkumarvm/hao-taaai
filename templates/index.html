@@ -1,0 +1,169 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+           <div class="overlay" id="overlay">
+                <div class="left">
+                    <img src="../static/images/logo 1.png" alt="">
+                    <ul>
+                        <p><a href="">HOME</a></p>
+                        <p><a href="./about.html">ABOUT</a></p>
+                        <p><a href="">JOBS</a></p>
+                        <p><a href="">BENEFITS</a></p>
+                    </ul>
+            
+                </div>
+                <div class="right">
+                    <img  id="close" src="../static/images/Frame 2.png" alt="">
+                    <p>Follow Us On</p>
+                    <div>
+                        <img src="../static/images/instagram.png" alt="">
+                        <img src="../static/images/Vector(1).png" alt="">
+                        <img s rc="../static/images/Vector(2).png" alt="">
+                        <img src="../static/images/mail.png" alt="">
+                    </div>
+                
+                </div>
+           </div>
+    <section class="spotlight">
+        <div>
+            <h1>Hao Tai</h1>
+            <h5>Hao Tai Int Co a partner of Asia's top financial group, is currently one of the <br> few overseas financial operating companies.</h5>
+            <div class="readmorecover" >
+            <h4>Read More</h4> 
+            </div>   
+
+            <div class="box">
+                <div class="boxin" >
+                <p> <b>1500</b><br> Num. of Employees </p>
+                </div>
+                <div class="boxin" >
+                <p> <b>MaeSot</b> <br> Location</p>
+                </div>
+                <div class="boxin" >
+                <p> <b> 430+</b><br> Num. of Buildings</p>
+                </div>
+                <div class="boxin" >
+                <p> <b>72Acres</b><br> Area</p>
+                </div>
+            </div>  
+        </div>
+        <div class="square"></div>
+    </section>
+    <div>
+        <div class="jobcategory">
+            <h2>Job Categories</h2>
+        </div>
+    </div>
+    <section class="fullbox">
+        <div class="subbox">
+
+            {% for i in category %}
+            <div class="singlebox">
+                <img src="../static/images/cryptocurrencies 1.png" alt="">
+                <a href="{% url 'jobi' i.pk %}"><h4>{{i.title}}</h4>
+                <p>{{i.description}}</p>
+                    <p class="inner">120 JobVacancy</p></a>
+            </div>
+
+            {%endfor%}
+
+            
+
+          
+           
+
+           
+
+            <div class="singlebox" , id="more" >
+                
+                    <h4>MORE</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="boxthree">
+            <div class="benefits">
+                <h3>Benefits</h3>     
+            </div>
+            <div class="boxthreefull" >      
+                <div class="beforearrival" >
+                    <div>
+                        <h4>Before Arrival</h4>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Flight ticket</li>
+                            <li>Thai pass </li>
+                            <li>Hotel Reservations</li>
+                            <li>Insurance </li>
+                            <li>Offer Letter</li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="beforearrival" >
+                <div>
+                    <h4>After arrival to Thailand</h4>
+                </div>
+                <div>
+                <ul>
+                    <li>Cab Pick-up and all other transportation facilities
+                    </li>
+                    <li>Hotel stay
+                    </li>
+                    <li>Arrangement for Food</li>
+                    </ul>
+                </div> 
+                </div>
+                <div class="beforearrival" >
+                <div>
+                    <h4>During the work</h4>
+                </div>
+                <div>
+                <ul>
+                    <li>Air-conditioned Accommodation and
+                        3 times meals a day </li>
+                    <li>Personal cell phones with Internet
+                    </li>
+                    <li>Paid time off (PTO) such as sick days
+                        and vacation days (15 days/6 months)</li>
+                    <li>Professional development</li>
+                </ul>
+                </div> 
+                </div>
+            </div>    
+        </section>
+
+        {%endblock%}
+
+        <!-- <section class="footer" >
+            <h3>Hao Tai</h3>
+            <div id="bottomdiv">
+                <div class="footerleft">
+                    <p>Links</p>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="">JOBS</a></li>
+                        <li><a href="">BENEFITS</a></li>
+                    </ul>
+        
+                </div>
+                <div class="footerright">
+                    <p>Follow Us On</p>
+                    <div>
+                        <img src="../static/images/instagram.png" alt="">
+                        <img src="../static/images/Vector(1).png" alt="">
+                        <img src="../static/images/Vector(2).png" alt="">
+                        <img src="../static/images/mail.png" alt="">
+                    </div>
+                    
+                </div>
+
+            </div>   
+        </section>
+        <script src="./menu.js"></script>
+        
+</body>
+</html> -->
